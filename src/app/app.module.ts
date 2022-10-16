@@ -13,6 +13,9 @@ import { ViewfriendsComponent } from './viewfriends/viewfriends.component';
 const appRoutes:Routes=[
   {
     path:"",component:AddfriendsComponent
+  },
+  {
+    path:"view",component:ViewfriendsComponent
   }
 ]
 

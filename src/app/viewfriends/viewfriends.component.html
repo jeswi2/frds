@@ -1,1 +1,47 @@
-<p>viewfriends works!</p>
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xxl-12">
+        
+        
+
+        
+            <table class="table table-bordered table-striped-columns">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Friends Name</th>
+                    <th scope="col">Friends Nickname</th>
+                    <th scope="col">Description</th>
+
+                   
+                    
+                  </tr>
+                </thead>
+                <tbody class="table-group-divider">
+
+                  
+
+                  <tr *ngFor="let i of friendsData">
+
+                    <td>{{i._id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.friendName}}</td>
+                    <td>{{i.friendNickName}}</td>
+                    <td>{{i.DescribeYourFriend}}</td>
+                  
+                  </tr>
+                 
+                </tbody>
+              </table>
+           
+            
+            
+          
+              </div>
+              </div>
+              </div>
+              
+              

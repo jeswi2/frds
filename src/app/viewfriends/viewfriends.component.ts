@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-viewfriends',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewfriendsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private myapi:ApiService) {
+    this.fetchData()
+   }
+
+  fetchData=()=>{
+    this.myapi.viewFriend().subscribe(
+      (data)=>{
+        this.friendsData=data
+      }
+    )
+  }
+
+  friendsData:any={}
 
   ngOnInit(): void {
   }

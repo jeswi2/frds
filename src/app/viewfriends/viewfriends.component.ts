@@ -20,7 +20,7 @@ export class ViewfriendsComponent implements OnInit {
     )
   }
 
-  friendsData:any={}
+  friendsData:any=[]
 
   ngOnInit(): void {
   }
